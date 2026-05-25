@@ -7,7 +7,7 @@
 
     outputs = { self, nixpkgs, ... } @ inputs: 
         let
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        pkgs = nixpkgs.linuxPackages_latest.x86_64-linux;
     in
     {
         nixosConfigurations.silver = nixpkgs.lib.nixosSystem {
