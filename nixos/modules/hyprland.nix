@@ -2,12 +2,13 @@
 
     environment.systemPackages = with pkgs; [
         hyprland
-	kitty
+        kitty
+        waybar
     ];
 
     programs.hyprland = {
         enable = true;
-	withUWSM = true;
+        withUWSM = true;
     };
 
     services.pipewire = {
