@@ -6,6 +6,7 @@
         waybar
         hyprpaper
         hyprlock
+        rose-pine-hyprcursor
     ];
 
     programs.hyprland = {
