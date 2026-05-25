@@ -4,6 +4,8 @@
         hyprland
         kitty
         waybar
+        hyprpaper
+        hyprlock
     ];
 
     programs.hyprland = {
