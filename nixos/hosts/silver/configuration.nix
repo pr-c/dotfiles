@@ -5,12 +5,10 @@
     ./hardware.nix
     ../../modules/general.nix
     ../../modules/hyprland.nix
+    ../../modules/gui_apps.nix
+    ../../modules/fonts.nix
   ];
   system.stateVersion = "25.11"; # dont touch this, ever
-
-  environment.systemPackages = with pkgs; [
-    firefox
-  ];
 
   users.users.paul = {
     isNormalUser = true;
