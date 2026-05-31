@@ -11,5 +11,6 @@
         inkscape
         networkmanagerapplet
         zathura
+        kicad
     ];
 }
