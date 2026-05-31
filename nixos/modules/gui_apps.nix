@@ -4,5 +4,12 @@
         firefox
         syncthing
         keepassxc
+        darktable
+        gimp
+        thunderbird
+        kicad
+        inkscape
+        networkmanagerapplet
+        zathura
     ];
 }

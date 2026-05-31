@@ -7,6 +7,7 @@
         hyprpaper
         hyprlock
         rose-pine-hyprcursor
+        nwg-displays
         wofi
     ];
 
