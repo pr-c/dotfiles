@@ -66,6 +66,7 @@ return {
         vim.lsp.enable("clangd")
         vim.lsp.enable("rust_analyzer")
         vim.lsp.enable("wgsl_analyzer")
+        vim.lsp.enable("texlab")
 
         vim.api.nvim_create_autocmd('LspAttach', {
             callback = function(e)
