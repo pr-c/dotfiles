@@ -12,5 +12,6 @@
         networkmanagerapplet
         zathura
         kicad
+        obsidian
     ];
 }

@@ -17,6 +17,7 @@
   };
 
   time.timeZone = "Europe/Berlin";
+  nixpkgs.config.allowUnfree = true;
 
   services.openssh = {
     enable = true;
