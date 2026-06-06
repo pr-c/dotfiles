@@ -14,6 +14,7 @@
   users.users.paul = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager"];
+    shell = pkgs.zsh;
   };
 
   networking.hostName = inputs.hostname;

@@ -17,6 +17,8 @@
     zsh
   ];
 
+  programs.zsh.enable=true;
+
   networking.networkmanager = {
     enable = true;
     plugins = [ pkgs.networkmanager-openvpn ];
