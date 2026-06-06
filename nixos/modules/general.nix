@@ -9,6 +9,12 @@
     sshfs
     jq
     ripgrep
+    nix-index
+    wget2
+    gnutar
+    unzip
+    bind.dnsutils
+    zsh
   ];
 
   networking.networkmanager = {
