@@ -1,0 +1,6 @@
+#!/bin/sh
+
+alias ls='ls --color=tty'
+alias vi=nvim
+alias vim='nvim --clean'
+alias l=ls -alh
