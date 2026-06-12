@@ -23,6 +23,10 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   hardware.graphics.enable = true;
-  hardware.nvidia.open = false;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+      open = false;
+      modesetting.enable = true;
+  };
 }
 
