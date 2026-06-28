@@ -28,5 +28,9 @@
       open = false;
       modesetting.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+      steam
+  ];
 }
 
