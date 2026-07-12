@@ -9,6 +9,7 @@
         rose-pine-hyprcursor
         nwg-displays
         wofi
+        pavucontrol
     ];
 
     programs.hyprland = {
