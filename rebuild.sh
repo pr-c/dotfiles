@@ -11,7 +11,7 @@ nix flake check
 echo "NixOS Rebuilding..."
 LOG_LOCATION=/tmp/nixos-switch.log
 
-sudo nixos-rebuild boot --flake . |& tee ${LOG_LOCATION} || (cat ${LOG_LOCATION} | grep --color error && exit 1)
+sudo nixos-rebuild switch --flake . |& tee ${LOG_LOCATION} || (cat ${LOG_LOCATION} | grep --color error && exit 1)
 
 current=$(nixos-rebuild list-generations --json | jq -r '.[] | select( .current == true) | .generation');
 git add .
