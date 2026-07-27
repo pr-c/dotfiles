@@ -7,5 +7,6 @@
         cmake
         ccache
         clang-tools
+        glibc.dev
     ];
 }
