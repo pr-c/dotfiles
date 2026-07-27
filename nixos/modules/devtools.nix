@@ -8,5 +8,6 @@
         ccache
         clang-tools
         glibc.dev
+        bear
     ];
 }
