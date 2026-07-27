@@ -9,6 +9,7 @@
     ../../modules/fonts.nix
     ../../modules/texlive.nix
     ../../modules/rdp.nix
+    ../../modules/devtools.nix
   ];
   system.stateVersion = "25.11"; # dont touch this, ever
 
