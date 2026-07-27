@@ -15,6 +15,7 @@
     unzip
     bind.dnsutils
     zsh
+    file
   ];
 
   programs.zsh.enable=true;
