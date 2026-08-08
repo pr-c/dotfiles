@@ -14,5 +14,6 @@
         kicad
         obsidian
         ncspot
+        playerctl
     ];
 }
