@@ -1,6 +1,6 @@
 return {
     'nvim-telescope/telescope.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim', 'ghassan0/telescope-glyph.nvim'},
+    dependencies = { 'nvim-lua/plenary.nvim'},
     config = function() 
         require("telescope").setup({
             pickers = {
@@ -9,6 +9,5 @@ return {
                 }
             }
         })
-        require('telescope').load_extension('glyph')
     end
 }
