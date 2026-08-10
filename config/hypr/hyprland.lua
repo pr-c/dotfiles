@@ -177,3 +177,23 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+
+
+--Host Specifics
+local function getHostname()
+    local f = io.popen("/usr/bin/hostname")
+    local hostname = f:read("*a") or ""
+    f:close()
+    hostname = string.gsub(hostname, "\n$" , "")
+    return hostname
+end
+
+local hostname = getHostname();
+if (hostname == "PRTP") then
+    hl.bind(mainMod .. "+ CTRL + SHIFT + PAGE_UP", function()
+        hl.monitor({ output = "eDP-1", disabled = false })
+    end)
+    hl.bind(mainMod .. "+ CTRL + SHIFT + PAGE_DOWN", function() 
+        hl.monitor({ output = "eDP-1", disabled = true })
+    end)
+end
