@@ -161,7 +161,7 @@ local function create_custom_workspace(name, key)
 end
 
 create_custom_workspace("CDS", "T")
-create_custom_workspace("LibraryManager", "G")
+create_custom_workspace("LibraryManager", "Y")
 create_custom_workspace("Console", "BACKSLASH")
 create_custom_workspace("X", "X")
 
