@@ -92,6 +92,10 @@ hl.bind(mainMod .. " + TAB", hl.dsp.group.next({}))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.workspace.move({ monitor = "r"}))
 hl.bind(mainMod .. " + COMMA", hl.dsp.workspace.move({ monitor = "l"}))
 
+hl.bind(mainMod .. " + SHIFT + O", function() 
+    hl.exec_cmd("hyprlock")
+end)
+
 hl.bind(mainMod .. "+ A", function()
     local ws = hl.get_active_workspace()
     if ws then
@@ -115,8 +119,8 @@ end)
 -- Workspaces
 for i = 1, 10 do
     local key = i % 10
-    hl.bind(mainMod .. " + " .. key,            hl.dsp.focus({ workspace = i }))
-    hl.bind(mainMod .. " + SHIFT + " .. key,    hl.dsp.window.move({ workspace = i }))
+    hl.bind(mainMod .. " + " .. key,            hl.dsp.focus({ workspace = i, follow = false }))
+    hl.bind(mainMod .. " + SHIFT + " .. key,    hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
 hl.bind(mainMod .. " + i", hl.dsp.exec_cmd("tag=$(printf '\n' | wofi --dmenu --height 1 --hide-scroll --prompt 'Tag'); hyprctl dispatch \"hl.dsp.focus({tag='$tag'})\""))
