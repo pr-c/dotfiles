@@ -1,9 +1,6 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
-        "mason-org/mason.nvim",
-        "mason-org/mason-lspconfig.nvim",
-        "hrsh7th/nvim-cmp",
         "skywind3000/asyncrun.vim",
         "latex-lsp/texlab",
         "lervag/vimtex"
@@ -11,10 +8,6 @@ return {
 
 
     config = function()
-        require("mason").setup()
-        require("mason-lspconfig").setup()
-
-
         vim.lsp.config('*', {
             capabilities = capabilities
         })
