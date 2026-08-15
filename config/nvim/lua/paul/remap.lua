@@ -51,23 +51,7 @@ map("i", "<M-S-a>", "Ä")
 map("i", "<M-s>", "ß")
 
 
-map("n", "<leader>vs", function()
-        require("obsidian").get_client():command("ObsidianSearch", {})
-    end
-)
-map("n", "<leader>vo", function()
-        require("obsidian").get_client():command("ObsidianQuickSwitch", {})
-    end
-)
-map("n", "<leader>vb", function()
-        require("obsidian").get_client():command("ObsidianBacklinks", {})
-    end
-)
-map("n", "<leader>vl", function()
-        require("obsidian").get_client():command("ObsidianLinks", {})
-    end
-)
-map("n", "<leader>va", function()
-        require("obsidian").get_client():command("ObsidianOpen", {})
-    end
-)
+map("n", "<leader>vs", "<cmd>Obsidian search<cr>")
+map("n", "<leader>vo", "<cmd>Obsidian quick_switch<cr>")
+map("n", "<leader>vb", "<cmd>Obsidian backlinks<cr>")
+map("n", "<leader>vl", "<cmd>Obsidian links<cr>")
