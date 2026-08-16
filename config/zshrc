@@ -1,4 +1,7 @@
-autoload -Uz vcs_info
+autoload -Uz vcs_info compinit promptinit
+
+promptinit
+compinit
 
 setopt PROMPT_SUBST
 
