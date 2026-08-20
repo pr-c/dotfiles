@@ -67,7 +67,8 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("wofi --show drun"))
 
-hl.bind(mainMod .. " + Q", hl.dsp.window.kill({}))
+hl.bind(mainMod .. " + Q", hl.dsp.window.close({}))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.kill({}))
 hl.bind(mainMod .. " + SHIFT + Space", hl.dsp.window.float({}))
 hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + f11", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
@@ -200,4 +201,11 @@ if (hostname == "PRTP") then
     hl.bind(mainMod .. "+ CTRL + SHIFT + PAGE_DOWN", function() 
         hl.monitor({ output = "eDP-1", disabled = true })
     end)
+
+    hl.monitor({
+        output = "eDP-1",
+        mode="1920x1080@60",
+        position="0x0",
+        scale=1
+    })
 end
