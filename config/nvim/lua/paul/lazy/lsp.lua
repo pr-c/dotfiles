@@ -27,6 +27,10 @@ return {
             capabilities = capabilities,
         })
 
+        vim.lsp.config('pyright', {
+            capabilities = capabilities,
+        })
+
         --        vim.lsp.config('ccls', {
         --   capabilities = capabilities,
         --   })
@@ -60,6 +64,7 @@ return {
         vim.lsp.enable("rust_analyzer")
         vim.lsp.enable("wgsl_analyzer")
         vim.lsp.enable("texlab")
+        vim.lsp.enable("pyright")
 
         vim.api.nvim_create_autocmd('LspAttach', {
             callback = function(e)
