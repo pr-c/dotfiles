@@ -9,5 +9,14 @@ return {
                 path = "~/obsidian",
             },
         },
+        daily_notes = {
+            enabled = true,
+            folder = "daily",
+            date_format = "YYYY-MM-DD",
+            alias_format = nil,
+            default_tags = { "daily-notes" },
+            workdays_only = false,
+        },
     },
+
 }
