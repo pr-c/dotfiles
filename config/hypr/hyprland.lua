@@ -64,7 +64,7 @@ local mainMod = "SUPER";
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("firefox"))
-hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("wofi --show drun"))
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close({}))
@@ -92,10 +92,6 @@ hl.bind(mainMod .. " + TAB", hl.dsp.group.next({}))
 
 hl.bind(mainMod .. " + PERIOD", hl.dsp.workspace.move({ monitor = "r"}))
 hl.bind(mainMod .. " + COMMA", hl.dsp.workspace.move({ monitor = "l"}))
-
-hl.bind(mainMod .. " + SHIFT + O", function() 
-    hl.exec_cmd("hyprlock")
-end)
 
 hl.bind(mainMod .. "+ A", function()
     local ws = hl.get_active_workspace()
