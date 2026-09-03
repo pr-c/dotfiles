@@ -64,7 +64,7 @@ local mainMod = "SUPER";
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("firefox"))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + CTRL + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("wofi --show drun"))
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close({}))
