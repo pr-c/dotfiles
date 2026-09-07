@@ -166,6 +166,7 @@ create_custom_workspace("LibraryManager", "Y")
 create_custom_workspace("Console", "BACKSLASH")
 create_custom_workspace("X", "X")
 create_custom_workspace("Output", "O")
+create_custom_workspace("Void", "F12")
 
 
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
