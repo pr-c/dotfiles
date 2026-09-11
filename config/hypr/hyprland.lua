@@ -28,7 +28,7 @@ hl.config({
         no_donation_nag = true,
     },
     animations = {
-        enabled = true,
+        enabled = false,
     },
     dwindle = {
         preserve_split = true,
