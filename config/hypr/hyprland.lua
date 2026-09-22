@@ -208,6 +208,8 @@ if (hostname == "PRTP") then
     })
 end
 
+pcall(require, "monitors")
+
 hl.window_rule({
     name = "OutputWindowRule", 
     match = {
