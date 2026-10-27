@@ -28,7 +28,7 @@ hl.config({
         no_donation_nag = true,
     },
     animations = {
-        enabled = true,
+        enabled = false,
     },
     dwindle = {
         preserve_split = true,
@@ -207,6 +207,8 @@ if (hostname == "PRTP") then
         scale=1
     })
 end
+
+pcall(require, "monitors")
 
 hl.window_rule({
     name = "OutputWindowRule", 
