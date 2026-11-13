@@ -87,7 +87,7 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 hl.bind(mainMod .. " + g", hl.dsp.group.toggle({}))
-hl.bind(mainMod .. " + SHIFT + g", hl.dsp.group.lock_active({}))
+hl.bind(mainMod .. " + SHIFT + g", hl.dsp.group.lock({}))
 hl.bind(mainMod .. " + TAB", hl.dsp.group.next({}))
 
 hl.bind(mainMod .. " + PERIOD", hl.dsp.workspace.move({ monitor = "r"}))
