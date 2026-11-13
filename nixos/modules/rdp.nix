@@ -11,7 +11,7 @@ in
 {
   environment.systemPackages = [
     pinnedFreeRdp.freerdp
-    pkgs.remmina
-    pkgs.xpra
+    pinnedFreeRdp.remmina
+    pinnedFreeRdp.xpra
   ];
 }
