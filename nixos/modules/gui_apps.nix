@@ -15,5 +15,7 @@
         obsidian
         ncspot
         playerctl
+        libreoffice-qt
+        signal-desktop
     ];
 }
